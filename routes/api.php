@@ -54,3 +54,10 @@ Route::prefix('pesanan')->group(function () {
     Route::put('/{id}', [PesananController::class, 'update']);
     Route::delete('/{id}', [PesananController::class, 'destroy']);
 });
+
+// Melakukan uji coba RaceConditionTest.php
+
+Route::get('/api/endpoint', function () {
+    sleep(2); // Menambahkan jeda untuk mensimulasikan kondisi perlombaan
+    return response('Response dari permintaan pertama', 200);
+});
