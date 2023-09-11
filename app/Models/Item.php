@@ -9,8 +9,8 @@ class Item extends Model
 {
     use HasFactory;
 
-    protected $table = 'items'; // Nama tabel dalam basis data
-    protected $fillable = ['nama_produk', 'harga', 'quantity', 'harga_asli', 'is_flash_sale'];
+    protected $table = 'items';
+    protected $fillable = ['nama_produk', 'harga', 'quantity', 'harga_asli', 'is_flash_sale']; // Tambahkan 'is_flash_sale' ke fillable
 
     public function itemPesanan()
     {

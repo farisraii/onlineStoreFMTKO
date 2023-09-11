@@ -69,6 +69,7 @@ class ItemPesananController extends Controller
             'item_id' => 'required|exists:items,id',
             'quantity' => 'required|integer|min:1',
         ]);
+
         $item = ItemPesanan::find($id);
 
         if (!$item) {

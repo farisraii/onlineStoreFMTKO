@@ -10,6 +10,7 @@ class Pesanan extends Model
     use HasFactory;
 
     protected $table = 'pesanan';
+    protected $fillable = ['pembeli_id', 'total_harga']; // Tambahkan 'total_harga' ke fillable
 
     public function pembeli()
     {

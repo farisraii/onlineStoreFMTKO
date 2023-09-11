@@ -70,4 +70,3 @@ class PembeliController extends Controller
         return response()->json(['message' => 'Pembeli berhasil dihapus'], 200);
     }
 }
-
